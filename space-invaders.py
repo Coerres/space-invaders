@@ -73,7 +73,7 @@ while True:
 
     #Move the enemy back and down
     if enemy.xcor() > 280:
-        enemyspeed *= 1
+        enemyspeed *= -1
     
     if enemy.xcor() < -280:
         enemyspeed *= -1
