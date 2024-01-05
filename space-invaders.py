@@ -59,9 +59,9 @@ def move_right():
     player.setx(x)
 
 #Create keyboard bindings
-    turtle.listen()
-    turtle.onkey(move_left, "Left")
-    turtle.onkey(move_right, "Right")
+turtle.listen()
+turtle.onkey(move_left, "Left")
+turtle.onkey(move_right, "Right")
 
 #Main game loop
 while True:
@@ -77,4 +77,4 @@ while True:
 
 
 
-delay = input("Press enter to finish.")
+    delay = input("Press enter to finish.")
