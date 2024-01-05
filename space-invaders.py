@@ -40,7 +40,7 @@ enemy.penup()
 enemy.speed(0)
 enemy.setposition(-200, 250)
 
-enemy.speed = 2
+enemyspeed = 2
 
 
 #Move the player left and right
@@ -63,7 +63,13 @@ def move_right():
     turtle.onkey(move_left, "Left")
     turtle.onkey(move_right, "Right")
 
+#Main game loop
+while True:
 
+    #Move the enemy
+    x = enemy.xcor()
+    x += enemyspeed
+    enemy.setx(x)
 
 
 
