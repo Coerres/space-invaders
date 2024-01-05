@@ -71,6 +71,13 @@ while True:
     x += enemyspeed
     enemy.setx(x)
 
+    #Move the enemy back and down
+    if enemy.xcor() > 280:
+        enemyspeed *= 1
+    
+    if enemy.xcor() < -280:
+        enemyspeed *= -1
+
 
 
 
