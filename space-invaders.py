@@ -28,6 +28,17 @@ player.shape("triangle")
 player.penup()
 player.speed(0)
 player.setposition(0, -250)
+player.setheading(90)
+
+playerspeed = 15
+
+#Move the player left and right
+def move_left():
+    x = player.xcor()
+    x -= playerspeed
+    player.setx(x)
+
+
 
 
 
