@@ -20,3 +20,21 @@ for side in range(4):
     border_pen.fd(600)
     border_pen.lt(90)
 border_pen.hideturtle()
+
+#Create the player turtle
+player = turtle.Turtle()
+player.color("blue")
+player.shape("triangle")
+player.penup()
+player.speed(0)
+player.setposition(0, -250)
+
+
+
+
+
+
+
+
+
+delay = input("Press enter to finish.")
